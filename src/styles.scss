@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/assets/css/variables";
+@import "src/assets/css/spacing";
+@import "src/assets/css/typography";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}

@@ -1,0 +1,20 @@
+.heading {
+  &__primary {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  &__tertiary {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .heading {
+    &__primary {
+      font-size: 3rem;
+    }
+    &__tertiary {
+      font-size: 1.6rem;
+    }
+  }
+}
