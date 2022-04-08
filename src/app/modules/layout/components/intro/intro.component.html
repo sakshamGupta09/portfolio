@@ -1,11 +1,30 @@
 <section class="intro padding-medium">
   <h2 class="heading__primary">Hi, I'm Saksham Gupta</h2>
   <p class="heading__tertiary margin-top-small">
-    A Frontend Developer with 3+ years of experience, that thrives on building
-    neat , efficient and scalable web applications. I'm enthusiastic about
-    growing and gaining new skills on my journey. I value learning from others,
-    genuine connections and hearing about other people's passions and how I can
-    possibly help.
+    A Frontend Developer with over three years of experience, that thrives on
+    building neat, efficient and scalable web applications. I'm enthusiastic
+    about growing and gaining new skills on my journey. I value learning from
+    others, genuine connections and hearing about other people's passions and
+    how I can possibly help.
   </p>
-  <div class="social margin-top-small"></div>
+  <div class="margin-top-small d-flex">
+    <a
+      [href]="profileLinks.in"
+      target="_blank"
+      class="social d-flex justify-content-center align-items-center social--in"
+    >
+      <fa-icon [icon]="icons.linkedin"></fa-icon>
+    </a>
+    <a
+      [href]="profileLinks.github"
+      target="_blank"
+      class="social d-flex justify-content-center align-items-center social--github margin-left-xsmall"
+    >
+      <fa-icon [icon]="icons.github"></fa-icon>
+    </a>
+  </div>
+  <div class="margin-top-small d-flex align-items-center">
+    <button class="btn">Read More</button>
+    <button class="btn margin-left-xsmall">Contact Me</button>
+  </div>
 </section>
