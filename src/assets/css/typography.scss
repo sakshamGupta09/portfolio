@@ -11,6 +11,10 @@
     font-size: 1.2rem;
     font-weight: 300;
   }
+  &__small{
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }
 @media only screen and (min-width: 720px) {
   .heading {

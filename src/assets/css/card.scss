@@ -1,0 +1,15 @@
+.card {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow);
+  &__header {
+    border-bottom: var(--underline);
+    padding: 0.5rem 1rem;
+  }
+  &__body {
+    padding:1rem;
+  }
+  &__footer {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+}
