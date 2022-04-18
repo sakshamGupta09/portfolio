@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { SocialLinks } from '../../constants/social-links';
 
 @Component({
   selector: 'app-intro',
@@ -8,14 +8,8 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IntroComponent implements OnInit {
-  icons = {
-    linkedin: faLinkedinIn,
-    github: faGithub,
-  };
-  profileLinks = {
-    in: 'https://www.linkedin.com/in/saksham-gupta-6523aa193/',
-    github: 'https://github.com/sakshamGupta09',
-  };
+  socialLinks = SocialLinks;
   constructor() {}
+
   ngOnInit(): void {}
 }

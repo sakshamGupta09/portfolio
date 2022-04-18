@@ -3,17 +3,36 @@
   padding: 0.75rem 1.75rem;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   color: var(--color-white);
-  border: 2px solid currentColor;
-  background-color: inherit;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
   transition: all 0.2s ease-in-out;
 
-  &:hover{
-      color: var(--color-primary);
-      background-color: var(--color-white);
+  &:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+  }
+}
+.btn-group {
+  display: flex;
+}
+@media only screen and(max-width : 600px) {
+  .btn-group {
+    flex-direction: column;
+    .btn:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+  }
+}
+@media only screen and(min-width : 900px) {
+  .btn-group {
+    flex-direction: row;
+    .btn:not(:first-child) {
+      margin-left: 4rem;
+    }
   }
 }

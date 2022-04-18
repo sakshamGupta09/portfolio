@@ -1,5 +1,8 @@
 .layout {
-  &__content {
-    background-image: url("/assets/images/bg.png");
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .layout {
+    padding: 0 4rem;
   }
 }

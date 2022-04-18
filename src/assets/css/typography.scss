@@ -1,28 +1,21 @@
 .heading {
+  color: #323b4b;
   &__primary {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 500;
   }
-  &__secondary {
-    font-size: 3rem;
-    font-weight: 300;
-  }
   &__tertiary {
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-  &__small {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--color-defaultText);
   }
 }
-@media only screen and (min-width: 720px) {
+@media only screen and (max-width: 900px) {
   .heading {
     &__primary {
-      font-size: 3rem;
+      font-size: 1.75rem;
     }
     &__tertiary {
-      font-size: 1.6rem;
+      font-size: 1rem;
     }
   }
 }
