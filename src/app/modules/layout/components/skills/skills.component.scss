@@ -1,0 +1,28 @@
+.skills {
+  background-color: #fafbfc;
+  padding: 5rem 1.5rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+.skill {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--color-white);
+  box-shadow: 0 50px 77px 0 rgb(176 183 195 / 22%);
+
+  &__img-box {
+    width: 120px;
+    height: 120px;
+  }
+  &__icon {
+    object-fit: contain;
+  }
+  &__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #323b4b;
+  }
+}

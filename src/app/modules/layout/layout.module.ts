@@ -5,9 +5,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
-  declarations: [LayoutComponent, IntroComponent],
+  declarations: [LayoutComponent, IntroComponent, SkillsComponent],
   imports: [CommonModule, FontAwesomeModule, LayoutRoutingModule],
 })
 export class LayoutModule {}

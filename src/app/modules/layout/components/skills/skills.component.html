@@ -1,0 +1,21 @@
+<section class="skills">
+  <h2 class="text-center heading heading__secondary">Technologies I work on</h2>
+  <div class="margin-top-medium skills__container">
+    <div
+      *ngFor="let el of skills"
+      class="skill d-flex flex-column align-items-center"
+    >
+      <div class="skill__img-box">
+        <img
+          [src]="el.imagePath"
+          [alt]="el.alt"
+          class="skill__icon"
+          loading="lazy"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <p class="skill__name margin-top-xsmall">{{ el.name }}</p>
+    </div>
+  </div>
+</section>
