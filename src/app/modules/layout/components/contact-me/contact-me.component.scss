@@ -1,0 +1,36 @@
+.contact {
+  padding: 5rem 1.5rem;
+  &__text {
+    font-size: 1.25rem;
+    color: #8a94a6;
+    font-weight: 500;
+  }
+  &__icon-box {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+  &__value {
+    word-break: break-all;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact {
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem;
+      padding: 0 4rem;
+    }
+    &__img {
+      background-image: url("/assets/images/programmer.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
