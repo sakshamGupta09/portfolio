@@ -1,0 +1,13 @@
+.proficiency {
+  padding: 5rem 1.5rem;
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a94a6;
+  }
+  &__value {
+    display: block;
+    width: 100%;
+  }
+}

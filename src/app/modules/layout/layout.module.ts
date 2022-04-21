@@ -6,9 +6,11 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { ProficiencyComponent } from './components/proficiency/proficiency.component';
 
 @NgModule({
-  declarations: [LayoutComponent, IntroComponent, SkillsComponent],
+  declarations: [LayoutComponent, IntroComponent, SkillsComponent, ExperiencesComponent, ProficiencyComponent],
   imports: [CommonModule, FontAwesomeModule, LayoutRoutingModule],
 })
 export class LayoutModule {}

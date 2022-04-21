@@ -1,0 +1,41 @@
+.experiences {
+  padding: 4rem 0.5rem;
+  background-color: #fafbfc;
+}
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 50px 77px 0 rgb(176 183 195 / 22%);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  &__tenure {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &__designation {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  &__achievement {
+    font-size: 1rem;
+    color: #8a94a6;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .experiences {
+    padding: 4rem;
+  }
+  .card {
+    padding: 2rem;
+    &__header {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      column-gap: 2rem;
+    }
+  }
+}

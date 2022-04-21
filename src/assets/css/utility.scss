@@ -1,3 +1,16 @@
 .text-center {
   text-align: center;
 }
+.link {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: border 0.3s ease-in-out;
+  &:link,
+  &:visited {
+    color: #377dff;
+  }
+  &:hover {
+    border-bottom: 1px solid #1366ff;
+  }
+}
