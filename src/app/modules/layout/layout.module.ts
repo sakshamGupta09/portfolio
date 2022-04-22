@@ -9,9 +9,10 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ProficiencyComponent } from './components/proficiency/proficiency.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [LayoutComponent, IntroComponent, SkillsComponent, ExperiencesComponent, ProficiencyComponent, ContactMeComponent],
+  declarations: [LayoutComponent, IntroComponent, SkillsComponent, ExperiencesComponent, ProficiencyComponent, ContactMeComponent, HeaderComponent],
   imports: [CommonModule, FontAwesomeModule, LayoutRoutingModule],
 })
 export class LayoutModule {}

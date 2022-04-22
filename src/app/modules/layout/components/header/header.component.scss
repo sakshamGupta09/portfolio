@@ -1,0 +1,34 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-white);
+  z-index: 1;
+  height: var(--header-height);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__brand {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "My Soul", cursive;
+    color: #551a8b;
+  }
+
+  &__link {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #8a94a6;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: #377dff;
+    }
+  }
+}
