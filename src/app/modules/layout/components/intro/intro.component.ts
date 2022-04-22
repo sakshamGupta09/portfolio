@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { SocialLinks } from '../../constants/social-links';
+import { LayoutService } from '../../services/layout.service';
 
 @Component({
   selector: 'app-intro',
@@ -9,7 +10,11 @@ import { SocialLinks } from '../../constants/social-links';
 })
 export class IntroComponent implements OnInit {
   socialLinks = SocialLinks;
-  constructor() {}
+  constructor(private service: LayoutService) {}
 
   ngOnInit(): void {}
+
+  public jumpTo(el: string): void {
+    this.service.jumpToSection(el);
+  }
 }

@@ -1,9 +1,12 @@
 <header class="header">
   <p class="header__brand">Saksham Gupta</p>
-  <nav class="header__navigation">
-    <a href="#" class="header__link">Skills</a>
-    <a href="#" class="header__link">Work Experience</a>
-    <a href="#" class="header__link">My Resume</a>
-    <a href="#" class="header__link">Contact Me</a>
+  <div class="header__menu" (click)="toggleMenu()">
+    <fa-icon [icon]="menuIcon"></fa-icon>
+  </div>
+  <nav class="header__navigation" [class.d-block]="isMenuOpen">
+    <a (click)="jumpTo('skills')" class="header__link">Skills</a>
+    <a (click)="jumpTo('experiences')" class="header__link">Work Experience</a>
+    <a class="header__link">My Resume</a>
+    <a (click)="jumpTo('contact-me')" class="header__link">Contact Me</a>
   </nav>
 </header>

@@ -5,7 +5,6 @@
   right: 0;
   background-color: var(--color-white);
   z-index: 1;
-  height: var(--header-height);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -18,17 +17,42 @@
     font-family: "My Soul", cursive;
     color: #551a8b;
   }
+  &__menu {
+    display: none;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+  }
 
   &__link {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #8a94a6;
     text-decoration: none;
     padding: 1rem;
+    cursor: pointer;
     transition: color 0.2s ease-in;
 
     &:hover {
       color: #377dff;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header {
+    padding: 0.75rem;
+
+    &__navigation {
+      width: 100%;
+      display: none;
+    }
+    &__link {
+      display: block;
+    }
+    &__brand {
+      font-size: 2rem;
+    }
+    &__menu {
+      display: block;
     }
   }
 }

@@ -1,6 +1,9 @@
 .d-flex {
   display: flex;
 }
+.d-block {
+  display: block !important;
+}
 .flex-column {
   flex-direction: column;
 }
